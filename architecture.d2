@@ -1,0 +1,182 @@
+# System Architecture
+direction: right
+
+# Style Definitions
+style: {
+  fill: "#ffffff"
+  stroke: "#000000"
+  font-size: 14
+  stroke-width: 2
+  font-color: "#000000"
+}
+
+# External Services
+external: {
+  label: "External Services"
+  style.fill: "#f5f5f5"
+  
+  openai: OpenAI {
+    shape: cloud
+    style.fill: "#87CEEB"
+    
+    llm: "GPT-3.5 Turbo" {
+      shape: rectangle
+    }
+    
+    embeddings: "Text Embeddings" {
+      shape: rectangle
+    }
+  }
+  
+  pinecone: Pinecone {
+    shape: cloud
+    style.fill: "#98FB98"
+    
+    index: "Vector Index" {
+      shape: cylinder
+    }
+  }
+}
+
+# Core Services
+services: {
+  label: "Core Services"
+  style.fill: "#f0f0f0"
+  
+  chatbot: ChatbotService {
+    shape: rectangle
+    style.fill: "#FFB6C1"
+    
+    components: {
+      llm_manager: "LLM Manager" {
+        shape: rectangle
+      }
+      
+      embeddings: "Embeddings Manager" {
+        shape: rectangle
+      }
+      
+      qa_chain: "QA Chain" {
+        shape: rectangle
+      }
+      
+      vector_store: "Vector Store" {
+        shape: rectangle
+      }
+      
+      output_parser: "Output Parser" {
+        shape: rectangle
+      }
+    }
+  }
+  
+  data: DataService {
+    shape: rectangle
+    style.fill: "#DDA0DD"
+    
+    components: {
+      processor: DataProcessor {
+        shape: rectangle
+      }
+      
+      pinecone_manager: PineconeManager {
+        shape: rectangle
+      }
+      
+      env_manager: EnvironmentManager {
+        shape: rectangle
+      }
+    }
+  }
+}
+
+# Configuration
+config: {
+  label: "Configuration"
+  style.fill: "#f5f5f5"
+  
+  env: ".env" {
+    shape: page
+    style.fill: "#F0E68C"
+    
+    vars: {
+      style.stroke-dash: 5
+      OPENAI_API_KEY: "API Key"
+      PINECONE_API_KEY: "API Key"
+      PINECONE_INDEX_NAME: "Index Name"
+    }
+  }
+}
+
+# API Endpoints
+api: {
+  label: "API Endpoints"
+  style.fill: "#f5f5f5"
+  
+  chat: "/chat" {
+    shape: diamond
+    style.fill: "#FFB6C1"
+    
+    request: "ChatRequest" {
+      shape: rectangle
+      question: "string"
+    }
+    
+    response: "ChatResponse" {
+      shape: rectangle
+      status: "string"
+      answer: "string"
+    }
+  }
+  
+  process: "/process" {
+    shape: diamond
+    style.fill: "#DDA0DD"
+    
+    request: "ProcessDataRequest" {
+      shape: rectangle
+      file_path: "string"
+      chunk_size: "int"
+      chunk_overlap: "int"
+    }
+    
+    response: "ProcessDataResponse" {
+      shape: rectangle
+      status: "string"
+    }
+  }
+}
+
+# Connections
+api.chat -> services.chatbot: "HTTP POST"
+api.process -> services.data: "HTTP POST"
+
+services.chatbot.components.llm_manager -> external.openai.llm: "API Calls"
+services.chatbot.components.embeddings -> external.openai.embeddings: "API Calls"
+services.chatbot.components.vector_store -> external.pinecone.index: "Query/Store"
+
+services.data.components.processor -> external.pinecone.index: "Store Vectors"
+services.data.components.pinecone_manager -> external.pinecone: "Manage Connection"
+
+config.env -> services.chatbot: "Config"
+config.env -> services.data: "Config"
+
+# Flow Description
+explanation: |md
+  ## System Flow
+  1. Data Processing Flow:
+     - Client uploads documents via `/process` endpoint
+     - DataProcessor chunks the documents
+     - Embeddings are generated and stored in Pinecone
+  
+  2. Question Answering Flow:
+     - Client sends question via `/chat` endpoint
+     - ChatbotService processes the question
+     - Uses LLM and Vector Store for retrieval QA
+     - Returns formatted answer
+  
+  3. Configuration:
+     - All API keys and settings managed via .env
+     - Single Pinecone index shared across services
+     - Uses GPT-3.5-turbo with temperature=0
+|

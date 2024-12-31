@@ -1,0 +1,132 @@
+2024-12-30 19:21:47,702 - __main__ - INFO - Environment variables loaded
+2024-12-30 19:21:48,075 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 19:21:50,725 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 19:21:50,726 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 19:22:51,184 - __main__ - INFO - Starting to process file: None
+2024-12-30 19:22:51,184 - __main__ - ERROR - Error processing file: expected str, bytes or os.PathLike object, not NoneType
+2024-12-30 19:22:51,184 - __main__ - ERROR - Error processing data: expected str, bytes or os.PathLike object, not NoneType
+2024-12-30 19:23:00,518 - __main__ - INFO - Starting to process file: None
+2024-12-30 19:23:00,519 - __main__ - ERROR - Error processing file: expected str, bytes or os.PathLike object, not NoneType
+2024-12-30 19:23:00,519 - __main__ - ERROR - Error processing data: expected str, bytes or os.PathLike object, not NoneType
+2024-12-30 21:26:59,309 - __main__ - INFO - Environment variables loaded
+2024-12-30 21:26:59,649 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 21:27:03,764 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 21:27:03,765 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 21:27:11,567 - __main__ - INFO - Starting to process file: None
+2024-12-30 21:27:11,567 - __main__ - ERROR - Error processing file: expected str, bytes or os.PathLike object, not NoneType
+2024-12-30 21:27:11,568 - __main__ - ERROR - Error processing data: expected str, bytes or os.PathLike object, not NoneType
+2024-12-30 21:28:38,270 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/example.txt
+2024-12-30 21:28:38,270 - __main__ - ERROR - Error processing file: Error loading /Users/essayyzed/temp/getxm/example.txt
+2024-12-30 21:28:38,271 - __main__ - ERROR - Error processing data: Error loading /Users/essayyzed/temp/getxm/example.txt
+2024-12-30 21:29:00,510 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-30 21:29:07,965 - __main__ - INFO - Documents added to vector store
+2024-12-30 21:29:07,966 - __main__ - INFO - File processing completed successfully
+2024-12-30 21:37:09,791 - __main__ - INFO - Environment variables loaded
+2024-12-30 21:37:10,103 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 21:37:12,327 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 21:37:12,327 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 21:37:12,328 - __main__ - INFO - Shutting down application
+2024-12-30 21:37:23,593 - __main__ - INFO - Environment variables loaded
+2024-12-30 21:37:23,916 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 21:37:25,836 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 21:37:25,836 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 21:37:25,836 - __main__ - INFO - Shutting down application
+2024-12-30 21:37:30,712 - __main__ - INFO - Shutting down application
+2024-12-30 21:37:34,210 - __main__ - INFO - Environment variables loaded
+2024-12-30 21:37:34,505 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 21:37:36,890 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 21:37:36,890 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 21:37:44,682 - __main__ - INFO - Creating new index 'customer123-docs' for customer 'customer123'
+2024-12-30 21:38:13,534 - __main__ - INFO - Creating new index 'customer123-docs' for customer 'customer123'
+2024-12-30 21:38:19,984 - __main__ - INFO - Shutting down application
+2024-12-30 21:38:22,265 - __main__ - INFO - Environment variables loaded
+2024-12-30 21:38:22,576 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 21:38:24,214 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 21:38:24,214 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 21:38:25,929 - __main__ - INFO - Creating new index 'customer123-docs' for customer 'customer123'
+2024-12-30 21:39:24,186 - __main__ - INFO - Creating new index 'customer123-docs' for customer 'customer123'
+2024-12-30 21:40:22,475 - __main__ - INFO - Creating new index 'customer123-docs' for customer 'customer123'
+2024-12-30 21:41:22,925 - __main__ - INFO - Shutting down application
+2024-12-30 21:42:31,141 - __main__ - INFO - Environment variables loaded
+2024-12-30 21:42:31,464 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-30 21:42:33,955 - __main__ - INFO - Pinecone initialization completed
+2024-12-30 21:42:33,956 - __main__ - INFO - Pinecone initialized successfully
+2024-12-30 21:42:54,459 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-30 21:43:00,665 - __main__ - INFO - Documents added to vector store
+2024-12-30 21:43:00,666 - __main__ - INFO - File processing completed successfully
+2024-12-30 21:49:58,082 - __main__ - INFO - Shutting down application
+2024-12-31 12:55:00,112 - __main__ - INFO - Environment variables loaded
+2024-12-31 12:55:00,448 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-31 12:56:36,786 - __main__ - INFO - Creating new Pinecone index: getxm-1
+2024-12-31 12:56:36,787 - __main__ - ERROR - Failed to initialize Pinecone: 'OpenAIEmbeddings' object has no attribute 'dimension'
+2024-12-31 12:56:36,787 - __main__ - ERROR - Error processing data: 'OpenAIEmbeddings' object has no attribute 'dimension'
+2024-12-31 12:57:38,306 - __main__ - INFO - Shutting down application
+2024-12-31 12:57:41,320 - __main__ - INFO - Environment variables loaded
+2024-12-31 12:57:41,737 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-31 12:57:56,097 - __main__ - INFO - Creating new Pinecone index: getxm-1
+2024-12-31 12:58:02,747 - __main__ - INFO - Successfully initialized Pinecone with index: getxm-1
+2024-12-31 12:58:02,748 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-31 12:58:13,542 - __main__ - INFO - Documents added to vector store
+2024-12-31 12:58:13,543 - __main__ - INFO - File processing completed successfully
+2024-12-31 13:02:21,462 - __main__ - INFO - Shutting down application
+2024-12-31 13:02:25,215 - __main__ - INFO - Environment variables loaded
+2024-12-31 13:02:25,605 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-31 13:02:39,048 - __main__ - INFO - Successfully initialized Pinecone with index: getxm-1
+2024-12-31 13:02:39,049 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-31 13:02:44,029 - __main__ - INFO - Documents added to vector store
+2024-12-31 13:02:44,030 - __main__ - INFO - File processing completed successfully
+2024-12-31 13:09:13,245 - __main__ - INFO - Shutting down application
+2024-12-31 13:09:15,713 - __main__ - INFO - Environment variables loaded
+2024-12-31 13:09:16,017 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-31 13:09:36,493 - __main__ - INFO - Successfully initialized Pinecone with index: getxm-1
+2024-12-31 13:09:36,493 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-31 13:09:43,550 - __main__ - INFO - Documents added to vector store
+2024-12-31 13:09:43,550 - __main__ - INFO - File processing completed successfully
+2024-12-31 13:11:58,303 - __main__ - ERROR - Failed to initialize Pinecone: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2024-07', 'X-Cloud-Trace-Context': 'd42ad206dfc008a8d615b34d539549c3', 'Date': 'Tue, 31 Dec 2024 08:12:02 GMT', 'Server': 'Google Frontend', 'Content-Length': '200', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"INVALID_ARGUMENT","message":"Bad request: Your free plan does not support indexes in the us-west-2 region of aws. To create indexes in this region, upgrade your plan."},"status":400}
+
+2024-12-31 13:11:58,303 - __main__ - ERROR - Error processing data: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2024-07', 'X-Cloud-Trace-Context': 'd42ad206dfc008a8d615b34d539549c3', 'Date': 'Tue, 31 Dec 2024 08:12:02 GMT', 'Server': 'Google Frontend', 'Content-Length': '200', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"INVALID_ARGUMENT","message":"Bad request: Your free plan does not support indexes in the us-west-2 region of aws. To create indexes in this region, upgrade your plan."},"status":400}
+
+2024-12-31 13:12:30,198 - __main__ - ERROR - Failed to initialize Pinecone: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2024-07', 'X-Cloud-Trace-Context': '4d12005f573e687d34c6dc0d21afa413', 'Date': 'Tue, 31 Dec 2024 08:12:34 GMT', 'Server': 'Google Frontend', 'Content-Length': '200', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"INVALID_ARGUMENT","message":"Bad request: Your free plan does not support indexes in the us-west-2 region of aws. To create indexes in this region, upgrade your plan."},"status":400}
+
+2024-12-31 13:12:30,198 - __main__ - ERROR - Error processing data: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2024-07', 'X-Cloud-Trace-Context': '4d12005f573e687d34c6dc0d21afa413', 'Date': 'Tue, 31 Dec 2024 08:12:34 GMT', 'Server': 'Google Frontend', 'Content-Length': '200', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"INVALID_ARGUMENT","message":"Bad request: Your free plan does not support indexes in the us-west-2 region of aws. To create indexes in this region, upgrade your plan."},"status":400}
+
+2024-12-31 13:13:31,432 - __main__ - ERROR - Failed to initialize Pinecone: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2024-07', 'X-Cloud-Trace-Context': '83ffa869d1f7c961e04101ea454b4501', 'Date': 'Tue, 31 Dec 2024 08:13:35 GMT', 'Server': 'Google Frontend', 'Content-Length': '200', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"INVALID_ARGUMENT","message":"Bad request: Your free plan does not support indexes in the us-west-2 region of aws. To create indexes in this region, upgrade your plan."},"status":400}
+
+2024-12-31 13:13:31,432 - __main__ - ERROR - Error processing data: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2024-07', 'X-Cloud-Trace-Context': '83ffa869d1f7c961e04101ea454b4501', 'Date': 'Tue, 31 Dec 2024 08:13:35 GMT', 'Server': 'Google Frontend', 'Content-Length': '200', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"INVALID_ARGUMENT","message":"Bad request: Your free plan does not support indexes in the us-west-2 region of aws. To create indexes in this region, upgrade your plan."},"status":400}
+
+2024-12-31 13:14:52,555 - __main__ - INFO - Shutting down application
+2024-12-31 13:14:55,280 - __main__ - INFO - Environment variables loaded
+2024-12-31 13:14:55,577 - __main__ - INFO - NLTK data downloaded successfully
+2024-12-31 13:15:21,252 - __main__ - INFO - Successfully initialized Pinecone with index: getxm-1
+2024-12-31 13:15:21,252 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-31 13:15:27,141 - __main__ - INFO - Documents added to vector store
+2024-12-31 13:15:27,142 - __main__ - INFO - File processing completed successfully
+2024-12-31 13:15:38,323 - __main__ - INFO - Successfully initialized Pinecone with index: getxm-1
+2024-12-31 13:15:38,324 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-31 13:15:43,310 - __main__ - INFO - Documents added to vector store
+2024-12-31 13:15:43,310 - __main__ - INFO - File processing completed successfully
+2024-12-31 13:23:36,005 - __main__ - INFO - Successfully initialized Pinecone with index: getxm-2
+2024-12-31 13:23:36,007 - __main__ - INFO - Starting to process file: /Users/essayyzed/temp/getxm/data.md
+2024-12-31 13:23:42,135 - __main__ - INFO - Documents added to vector store
+2024-12-31 13:23:42,135 - __main__ - INFO - File processing completed successfully
+2024-12-31 14:27:50,898 - __main__ - INFO - Shutting down application
+2024-12-31 14:27:54,527 - __main__ - INFO - Environment variables loaded
+2024-12-31 14:27:54,869 - __main__ - INFO - NLTK data downloaded successfully

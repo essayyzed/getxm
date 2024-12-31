@@ -1,9 +1,12 @@
 [project]
 name = "getxm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Document Question Answering System with LangChain and Pinecone"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
+authors = [
+    { name = "Asad", email = "essayyzed@gmail.com" }
+]
 dependencies = [
     "beautifulsoup4>=4.12.3",
     "bs4>=0.0.2",
@@ -14,7 +17,10 @@ dependencies = [
     "langchain-community>=0.3.13",
     "numpy>=2.2.1",
     "pandas>=2.2.3",
+    "pinecone-client>=3.0.0",
     "python-dotenv>=1.0.1",
+    "python-multipart>=0.0.20",
+    "pydantic>=2.6.0",
     "requests>=2.32.3",
     "streamlit>=1.41.1",
     "uvicorn>=0.34.0",
@@ -23,30 +29,52 @@ dependencies = [
 [tool.poetry]
 name = "getxm"
 version = "0.1.0"
-description = ""
+description = "Document Question Answering System with LangChain and Pinecone"
 authors = ["Asad <essayyzed@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.10"
+# Core LangChain packages
 langchain = "^0.3.13"
 langchain-community = "^0.3.13"
-gpt4all = "^2.8.2"
+langchain-openai = "^0.2.14"
+langchain-ollama = "^0.2.2"
+
+# Vector stores and embeddings
+pinecone-client = "^3.0.0"
 faiss-cpu = "^1.9.0.post1"
-requests = "^2.32.3"
+
+# Web framework and server
 fastapi = "^0.115.6"
 uvicorn = "^0.34.0"
-streamlit = "^1.41.1"
-python-dotenv = "^1.0.1"
+python-multipart = "^0.0.20"
+
+# Data processing and utilities
 numpy = "^2.2.1"
 pandas = "^2.2.3"
-bs4 = "^0.0.2"
-beautifulsoup4 = "^4.12.3"
-python-multipart = "^0.0.20"
-langchain-ollama = "^0.2.2"
-langchain-openai = "^0.2.14"
+python-dotenv = "^1.0.1"
+pydantic = "^2.6.0"
 
+# Optional UI components
+streamlit = "^1.41.1"
+
+# Development dependencies
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.0"
+isort = "^5.13.0"
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+# Additional configurations
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
