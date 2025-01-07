@@ -1,0 +1,54 @@
+service: getxm-qa
+
+provider:
+  name: aws
+  runtime: python3.10
+  region: us-east-1  # Change to your preferred region
+  timeout: 30  # Increased timeout for LLM operations
+  memorySize: 1024  # Increased memory for better performance
+  environment:
+    OPENAI_API_KEY: ${ssm:/getxm/openai-api-key}
+    PINECONE_API_KEY: ${ssm:/getxm/pinecone-api-key}
+    PINECONE_INDEX_NAME: ${ssm:/getxm/pinecone-index-name}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - ssm:GetParameter
+            - ssm:GetParameters
+          Resource: 
+            - "arn:aws:ssm:${aws:region}:${aws:accountId}:parameter/getxm/*"
+
+functions:
+  api:
+    handler: lambda_handler.lambda_function
+    events:
+      - http:
+          path: /chat/{proxy+}
+          method: ANY
+          cors: true
+      - http:
+          path: /data/{proxy+}
+          method: ANY
+          cors: true
+    layers:
+      - !Ref PythonRequirementsLambdaLayer
+    warmup:
+      enabled: true
+      events:
+        - schedule: rate(5 minutes)
+
+custom:
+  pythonRequirements:
+    layer:
+      name: getxm-dependencies
+      description: Python dependencies for GetXM QA
+    noDeploy:
+      - pytest
+      - pytest-asyncio
+    dockerizePip: true
+    
+plugins:
+  - serverless-python-requirements
+  - serverless-warmup

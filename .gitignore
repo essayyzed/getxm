@@ -9,3 +9,4 @@ wheels/
 faiss_index
 # Virtual environments
 .venv
+debug.log
